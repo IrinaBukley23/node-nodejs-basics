@@ -10,7 +10,7 @@ const compress = async () => {
         const source = createReadStream(PATH);
         const destination = createWriteStream(RES_PATH);
         await pipeline(source, gzip, destination);
-      } catch (error) {
+      } catch (err) {
         throw Error('Ooops, operation failed!!!');
       }
 };
