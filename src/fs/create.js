@@ -1,7 +1,7 @@
 import { writeFile } from 'fs/promises';
 import { existSync } from 'node:fs';
 
-const STRING = 'Here soe text';
+const STRING = 'I am fresh and young';
 const PATH = './src/fs/files/fresh.txt';
 
 const create = async () => {
